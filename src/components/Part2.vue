@@ -1,7 +1,7 @@
 <template>
 
     <section class="section2">
-        <h1>La historia que todavía fue (Parte 1)</h1>
+        <h1>La historia que todavía no fue (Parte 1)</h1>
 
         <div class="text-content">
 
