@@ -105,25 +105,30 @@ const prop = defineProps({
 
     h1 {
         color: v-bind('prop.theme.color1');
-        font-size: 60px;
+        font-size: calc(40px + 1vw);
         width: 100%;
-        position: absolute;
         left: 0;
         font-weight: 400;
         text-transform: uppercase;
-        top: 150px;
         background-color: v-bind('prop.theme.color2');
         padding: 25px 0;
         padding-left: 50px;
+
+        @media (max-width: 768px) {
+            padding-left: 25px;
+        }
     }
 
     .text-content {
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin-top: 200px;
         background-color: v-bind('prop.theme.color4');
         padding: 50px;
+
+        @media (max-width: 768px) {
+            padding: 25px;
+        }
 
         p {
             font-weight: 400;
