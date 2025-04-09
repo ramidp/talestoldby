@@ -56,7 +56,7 @@ body {
 
 section {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
