@@ -13,6 +13,11 @@
 import { onMounted } from 'vue';
 import { story } from '@/assets/story.js';
 
+const prop = defineProps({
+    theme: Object,
+})
+
+
 // Función para renderizar preguntas y respuestas
 function renderQuestion(node) {
     const questionsElement = document.getElementById('questions');

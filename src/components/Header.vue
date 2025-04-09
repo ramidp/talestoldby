@@ -2,16 +2,28 @@
     <header>
         <div class="navbar">
             <ul>
-                <router-link to="/">Home</router-link>
-                <router-link to="/part2">Part2</router-link>
-                <li>Historias</li>
-                <li>Contacto</li>
+                <li>
+                    <router-link to="/">Home</router-link>
+                </li>
+                <!-- <li>
+                    <router-link to="/main-story">Main</router-link>
+                </li> -->
+                <li>
+                    <router-link to="/list-of-stories">Historias</router-link>
+                </li>
+                <li>
+                    <router-link to="/contact">Contact</router-link>
+                </li>
             </ul>
         </div>
     </header>
 </template>
 
 <script setup>
+
+const prop = defineProps({
+    theme: Object,
+})
 
 
 </script>
@@ -25,33 +37,35 @@ header {
     position: relative;
 
     .navbar {
-        background-color: rgb(98, 98, 249);
+        background-color: v-bind('prop.theme.color1');
         display: flex;
-        height: 60px;
         justify-content: center;
         align-items: center;
-        border-radius: 15px;
-        width: 50%;
-        top: 25px;
+        width: 100%;
+        padding: 25px 0;
         z-index: 1;
+        top: 0;
         position: fixed;
-        box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.5);
+
 
         ul {
             display: flex;
             margin: 0;
             padding: 0;
             list-style: none;
-            gap: 20px;
+            gap: 40px;
 
             li {
                 a {
                     color: white;
-                    font-weight: bold;
+                    font-weight: 300;
+                    font-size: 24px;
+                    letter-spacing: -1px;
                     text-decoration: none;
+                    text-transform: uppercase;
 
                     &:hover {
-                        color: rgb(56, 56, 150);
+                        color: v-bind('prop.theme.color3')
                     }
                 }
             }
