@@ -1,8 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Part1 from '../components/Part1.vue'
-import Part2 from '../components/Part2.vue'
 import Home from '../components/Home.vue'
-import Part4 from '../components/Part4.vue'
+import Contact from '../components/Contact.vue'
 import StoriesList from '../components/StoriesList.vue'
 import StoryTemplate from '../components/StoryTemplate.vue'
 
@@ -21,9 +19,9 @@ const router = createRouter({
       component: StoryTemplate,
     },
     {
-      path: '/second-story',
-      name: 'Part4',
-      component: Part4,
+      path: '/contact',
+      name: 'Contacto',
+      component: Contact,
     },
     {
       path: '/stories-list',

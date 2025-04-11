@@ -6,14 +6,14 @@
             <h1>HOME PAGE</h1>
         </div> -->
 
-        <div class="column2 column">
-            <div class="square">
-                <h1>TU HISTORIA COMIENZA AQUI</h1>
-            </div>
-        </div>
         <div class="column1 column">
             <div class="square"></div>
             <div class="square"></div>
+        </div>
+        <div class="column2 column">
+            <div class="square">
+                <h1>CONTACTO</h1>
+            </div>
         </div>
         <div class="column3 column">
             <div class="square"></div>

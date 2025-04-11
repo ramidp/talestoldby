@@ -3,13 +3,13 @@
         <div class="navbar">
             <ul>
                 <li>
-                    <router-link to="/">Home</router-link>
+                    <router-link to="/">Inicio</router-link>
                 </li>
                 <li>
                     <router-link to="/stories-list">Historias</router-link>
                 </li>
                 <li>
-                    <router-link to="/contact">Contact</router-link>
+                    <router-link to="/contact">Contacto</router-link>
                 </li>
             </ul>
         </div>
