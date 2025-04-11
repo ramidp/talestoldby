@@ -74,6 +74,11 @@ onMounted(async () => {
         }
     }
 
+    .reading-time {
+        font-weight: bold;
+        margin-left: 15px;
+    }
+
     .text-content {
         display: flex;
         flex-direction: column;
