@@ -1,5 +1,6 @@
 <template>
     <section class='section-story-template' v-if="story">
+
         <h1>{{ story.titulo }}</h1>
 
         <p class="reading-time">Lectura estimada: {{ tiempoLectura }} min</p>
@@ -7,6 +8,7 @@
         <div class="text-content">
             <p v-for="(parrafo, index) in story.contenido" :key="index">{{ parrafo }}</p>
         </div>
+
     </section>
 
     <div v-else>
@@ -48,7 +50,7 @@ onMounted(async () => {
     const url = route.params.url
     story.value = stories.find(h => h.url === url)
 
-    await nextTick() // 💥 Esperamos a que se renderice el DOM con la historia
+    await nextTick()
     tiempoLectura.value = calcularTiempoLectura()
 })
 
@@ -92,7 +94,7 @@ onMounted(async () => {
 
         p {
             font-weight: 400;
-            font-size: 22px;
+            font-size: calc(14px + 0.5vw);
             color: black;
             letter-spacing: -0.5px;
             line-height: 120%;
