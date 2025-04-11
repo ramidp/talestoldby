@@ -5,11 +5,8 @@
                 <li>
                     <router-link to="/">Home</router-link>
                 </li>
-                <!-- <li>
-                    <router-link to="/main-story">Main</router-link>
-                </li> -->
                 <li>
-                    <router-link to="/list-of-stories">Historias</router-link>
+                    <router-link to="/stories-list">Historias</router-link>
                 </li>
                 <li>
                     <router-link to="/contact">Contact</router-link>
@@ -36,6 +33,7 @@ header {
     align-items: center;
     position: relative;
 
+
     .navbar {
         background-color: v-bind('prop.theme.color1');
         display: flex;
@@ -43,6 +41,7 @@ header {
         align-items: center;
         width: 100%;
         padding: 25px 0;
+        height: 85px;
         z-index: 1;
         top: 0;
         position: fixed;
@@ -63,6 +62,7 @@ header {
                     letter-spacing: -1px;
                     text-decoration: none;
                     text-transform: uppercase;
+                    font-family: "Instrument Serif";
 
                     &:hover {
                         color: v-bind('prop.theme.color3')

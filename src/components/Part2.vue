@@ -1,7 +1,13 @@
 <template>
 
     <section class="section2">
-        <h1>La historia que todavía no fue (Parte 1)</h1>
+        <h1>La historia que
+            <br>
+            todavía
+            no fue.
+        </h1>
+
+        <p class="reading-time">Lectura estimada: {{ tiempoLectura }} min</p>
 
         <div class="text-content">
 
@@ -16,7 +22,7 @@
                 ella.
             </p>
             <br>
-            <br>
+
             <p>
                 En ese momento pienso: esto ya lo viví, y hace poco encima. Ya fui a la puerta de la casa de una chica
                 que
@@ -30,7 +36,7 @@
                 jajaja.
             </p>
             <br>
-            <br>
+
             <p>
                 Por un lado, tiene cierta diversión y mística hacer esto. Es decir, viene alguien que no conozco, la veo
                 caminar
@@ -41,14 +47,14 @@
                 pero tal vez tiene su onda y me llega por otro lado".
             </p>
             <br>
-            <br>
+
             <p>
                 A todo esto, mi cabeza deja de pensar y, en efecto, ella estaba en la puerta abriendo, y yo pensando
                 todo
                 esto.
             </p>
             <br>
-            <br>
+
             <p>
                 De allí un saludo, tan simple como cualquiera: un beso en la mejilla y un "Hola, jeje", tan inocente y
                 un
@@ -59,7 +65,7 @@
                 Nadie se saluda y se conoce sin antes conocerse.
             </p>
             <br>
-            <br>
+
             <p>
                 Posterior al saludo, caminamos hacia la esquina, y luego con rumbo, pero sin rumbo, ¿se entiende, no?
                 Eso de
@@ -75,7 +81,7 @@
             <br>
             <p>Asumía que estábamos yendo bien; bah, yo no pensaba tanto en eso, ya me sentía bien.</p>
             <br>
-            <br>
+
             <p>
                 Y así transcurrimos, por diferentes lares, caminando, charlando, ella contándome sus cuentos y yo los
                 míos.
@@ -91,33 +97,36 @@
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue'
 
 const prop = defineProps({
     theme: Object,
 })
 
 
+const tiempoLectura = ref(0)
+
+onMounted(() => {
+    tiempoLectura.value = calcularTiempoLectura('.text-content')
+})
+
+function calcularTiempoLectura(selector = '.text-content', palabrasPorMinuto = 100) {
+    const contenedor = document.querySelector(selector)
+
+    if (!contenedor) return 0
+
+    const texto = contenedor.innerText || contenedor.textContent || ''
+    const palabras = texto.trim().split(/\s+/).length
+
+    return Math.ceil(palabras / palabrasPorMinuto)
+}
+
+
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .section2 {
     gap: 35px;
-
-    h1 {
-        color: v-bind('prop.theme.color1');
-        font-size: calc(40px + 1vw);
-        width: 100%;
-        left: 0;
-        font-weight: 400;
-        text-transform: uppercase;
-        background-color: v-bind('prop.theme.color2');
-        padding: 25px 0;
-        padding-left: 50px;
-
-        @media (max-width: 768px) {
-            padding-left: 25px;
-        }
-    }
 
     .text-content {
         display: flex;
@@ -128,15 +137,6 @@ const prop = defineProps({
 
         @media (max-width: 768px) {
             padding: 25px;
-        }
-
-        p {
-            font-weight: 400;
-            font-size: 20px;
-            color: black;
-            letter-spacing: -0.5px;
-            line-height: 120%;
-            margin: 0;
         }
     }
 }
