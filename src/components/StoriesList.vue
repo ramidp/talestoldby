@@ -54,14 +54,18 @@ const prop = defineProps({
             margin: 0;
             padding: 0;
             display: grid;
+            justify-items: center;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
 
             li {
                 background-color: v-bind('prop.theme.color1');
-                width: fit-content;
                 padding: 20px;
                 transition: 300ms ease all;
+                width: fit-content;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
 
                 &:hover {
