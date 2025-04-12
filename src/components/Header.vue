@@ -8,9 +8,9 @@
                 <li>
                     <router-link to="/stories-list">Historias</router-link>
                 </li>
-                <li>
+                <!-- <li>
                     <router-link to="/contact">Contacto</router-link>
-                </li>
+                </li> -->
             </ul>
         </div>
     </header>

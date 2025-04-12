@@ -60,7 +60,6 @@ const prop = defineProps({
 
             li {
                 background-color: v-bind('prop.theme.color1');
-                padding: 20px;
                 transition: 300ms ease all;
                 width: fit-content;
                 display: flex;
@@ -78,6 +77,7 @@ const prop = defineProps({
 
                 a {
                     font-size: 30px;
+                    padding: 20px;
                     text-decoration: none;
                     transition: 300ms ease all;
                     color: v-bind('prop.theme.color3')

@@ -12,7 +12,8 @@
             </div>
         </div>
         <div class="column1 column">
-            <div class="square"></div>
+            <div class="square">
+            </div>
             <div class="square"></div>
         </div>
         <div class="column3 column">

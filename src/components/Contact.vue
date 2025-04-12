@@ -1,26 +1,27 @@
 <template>
 
-    <div class="home-container">
+    <div class="contact-container">
 
         <!-- <div class="title">
             <h1>HOME PAGE</h1>
         </div> -->
 
-        <div class="column1 column">
-            <div class="square"></div>
-            <div class="square"></div>
-        </div>
+
         <div class="column2 column">
             <div class="square">
                 <h1>CONTACTO</h1>
             </div>
         </div>
+        <div class="column4 column">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
         <div class="column3 column">
             <div class="square"></div>
             <div class="square"></div>
         </div>
-        <div class="column4 column">
-            <div class="square"></div>
+        <div class="column1 column">
             <div class="square"></div>
             <div class="square"></div>
         </div>
@@ -42,7 +43,7 @@ const prop = defineProps({
 </script>
 
 <style lang="scss" scoped>
-.home-container {
+.contact-container {
     display: flex;
     justify-content: center;
     align-items: center;
