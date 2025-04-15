@@ -10,7 +10,7 @@
                 <p v-for="(parrafo, index) in story.contenido" :key="index">{{ parrafo }}</p>
             </div>
 
-            <span class="quote">{{ story.quote }}</span>
+            <span v-if="story.quote" class="quote">"{{ story.quote }}"</span>
         </div>
 
         <div class="side-bar">
@@ -19,10 +19,14 @@
             <div class="more-stories-container">
 
 
-                <a v-for="story1 in stories.filter(story => `/story/${story.url}` != currentPath)" class="story"
-                    :href="`/story/${story1.url}`">
-                    {{ story1.titulo }}
+                <a v-for="story in stories
+                    .slice()
+                    .sort((a, b) => a.id - b.id)
+                    .filter(story => `/story/${story.url}` !== currentPath)" :key="story.id" class="story"
+                    :href="`/story/${story.url}`">
+                    {{ story.titulo }}
                 </a>
+
 
 
             </div>

@@ -65,6 +65,7 @@ const prop = defineProps({
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                min-height: 100px;
 
 
                 &:hover {
@@ -76,11 +77,12 @@ const prop = defineProps({
                 }
 
                 a {
-                    font-size: 30px;
+                    font-size: calc(20px + 0.5vw);
                     padding: 20px;
                     text-decoration: none;
                     transition: 300ms ease all;
-                    color: v-bind('prop.theme.color3')
+                    color: v-bind('prop.theme.color3');
+                    text-align: center;
                 }
             }
         }

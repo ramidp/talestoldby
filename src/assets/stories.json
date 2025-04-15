@@ -26,9 +26,9 @@
     "url": "otra-carta-de-amor",
     "titulo": "Otra Carta de Amor",
     "contenido": [
-      "Sofía siempre había creído en las palabras escritas. Para ella, una carta era un fragmento del alma, un susurro convertido en tinta. Durante meses, había enviado cartas de amor a un viejo amor, esperando que fueran recibidas con la misma emoción con la que las escribía. Pero las respuestas nunca llegaron, y cuando lo hicieron, fueron frías, distantes, como si cada palabra suya se deshiciera antes de tocar el corazón de quien las leía.",
-      "Con el tiempo, dejó de escribir. Guardó su última carta en un cajón y decidió que el amor, al menos el suyo, no estaba destinado a florecer en papel.",
-      "Entonces, apareció un nuevo amor. Llegó sin preámbulos, sin promesas, con una sonrisa que no pedía nada a cambio. Con él, las palabras volvieron a fluir sin esfuerzo, pero esta vez no en cartas escondidas en sobres sellados, sino en conversaciones que duraban hasta el amanecer. Sofía sintió algo que antes creía imposible: el amor podía nacer de nuevo, y lo hacía con más fuerza cuando se le daba una segunda oportunidad.",
+      "Sofía siempre le había gustado escribir cuentos, notas, narrativas o, especialmente, cartas. Para ella, una carta era un fragmento del alma, un susurro convertido en palabras. Durante meses, había enviado cartas de amor a un viejo amor, esperando que fueran recibidas con la misma emoción con la que las escribía. Pero las respuestas nunca llegaron, y cuando lo hicieron, fueron frías, distantes, como si cada palabra suya se deshiciera antes de tocar el corazón de quien las leía.",
+      "Con el tiempo, dejó de escribir. Guardó su última carta en un cajón y decidió que el amor, al menos el suyo, no estaba destinado a florecer en papel, aunque muchas palabras quedaron sin ser leídas.",
+      "Al cabo de un cierto tiempo, un nuevo amor floreció, y de ello una nueva emoción por escribir. Llegó sin preámbulos, sin promesas, con una sonrisa que no pedía nada a cambio. Con él, las palabras volvieron a fluir sin esfuerzo, pero esta vez no en cartas escondidas en sobres sellados, sino en conversaciones que duraban hasta el amanecer. Sofía sintió algo que antes creía imposible: el amor podía nacer de nuevo, y lo hacía con más fuerza en cuanto se le diera otro oportunidad.",
       "Una noche, sin darse cuenta, sus dedos buscaron papel y pluma. Escribió sin miedo, sin la angustia de la incertidumbre, solo con la certeza de que esta vez sus palabras serían bien recibidas.",
       "Dobló la hoja con cuidado y, antes de entregarla, sonrió. Era otra carta de amor, pero esta vez, era para alguien que realmente quería leerla."
     ]
@@ -74,5 +74,20 @@
       "Entonces, si pudieras renacer, ¿vivirías otra vida?",
       "— Pero, ¿acaso no sigo teniendo la mía? Todavía estoy a tiempo. No tengo ni necesito renacer para empezar de nuevo. Solo tengo que atreverme a tirarme al vacío de lo conocido."
     ]
+  },
+  {
+    "id": 6,
+    "titulo": "Opuestos: una búsqueda en espejo",
+    "url": "opuestos-una-busqueda-en-espejo",
+    "contenido": [
+      "Dicen que los opuestos se atraen...",
+      "¿Por qué será que siempre se piensa eso? ¿Tendrá que ver con esta idea dual, donde dos caras son parte de una misma moneda? ¿Como el Yin y el Yang? ¿La felicidad y la tristeza? ¿Lo bueno y lo malo? ¿O algo tan simple como la luz y la oscuridad?",
+      "¿Será algo que decimos simplemente para justificar las diferencias? ¿O, por el contrario, es una afirmación que realmente justifica las diferencias? A decir verdad, diferencias podemos encontrar en todos lados, pero cuando hablamos de opuestos, ya no hablamos de una diferencia y nada más, sino que hablamos de *la* diferencia, ¿verdad?",
+      "¿Valdrá la pena experimentar el relacionarse con esa gran diferencia? Y bueno, esto creo que ya depende mucho de la persona. Algunos lo ven como algo catastrófico. ¿Será que esas personas no gustan de las diferencias, sino que buscan pares o simplemente similitudes que les generen confort y un buen conocido? Por el contrario, hay quienes se alimentan —y se hallan— en la incomodidad de la diferencia. En ese caso, relacionarse con un polo opuesto resulta interesante, e incluso, un descubrimiento por descubrir.",
+      "Y al pensar en quienes gustan y no gustan de lo diferente, volvemos al comienzo: a describir polos opuestos, personas opuestas, que buscan y no buscan lo mismo. Porque, en síntesis, todo se resume en la búsqueda de pares. Incluso quien no busca, busca un par; tal vez no en otros, sino en sí mismo.",
+      "Ahora, la pregunta es: ¿esa búsqueda de uno mismo será para encontrar nuestro opuesto o una nueva similitud?",
+      "Yo pienso que la búsqueda interna, sin otros, solo nos lleva a un viejo conocido disfrazado de otra forma. Es decir, una repetición de una similitud diferente."
+    ],
+    "quote": "Incluso quien no busca, busca un par. Tal vez no en otros, sino en sí mismo."
   }
 ]
